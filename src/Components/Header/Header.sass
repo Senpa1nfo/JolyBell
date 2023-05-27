@@ -1,0 +1,56 @@
+.header
+    width: 100%
+    height: 180px
+    background: #000
+    &__first
+        height: 110px
+        display: flex
+        align-items: flex-end
+    &__second
+        display: flex
+        justify-content: center
+        height: 70px
+    &__logo
+        width: 225px
+        height: 72px
+        background: #fff
+    &__left-line, &__right-line
+        flex: 1 1
+        height: 2px
+        contain: strict
+        &::before      
+            background: #fff
+            content: ""
+            height: 100%
+            position: absolute
+            width: 100%
+    &__menu
+        width: 1100px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        &__item
+            height: 100%
+            display: flex
+            align-items: center
+            a
+                color: #fff
+                text-decoration: none
+                text-transform: uppercase
+                position: relative
+                &::after
+                    content: ""
+                    background: #fff
+                    bottom: -3px
+                    left: 0
+                    height: 1px
+                    position: absolute
+                    transition: transform .5s
+                    width: 100%
+                &:not(:hover):after
+                    transform: scalex(0)
+
+                    
+
+                
+        
